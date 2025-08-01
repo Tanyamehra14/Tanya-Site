@@ -5,31 +5,29 @@ const { link, caption, height } = Astro.props
 ---
 
 
-<img height={height} src={link}>
-	<p> {caption}</p>
 
-    <div>
+<div class="container">
+    <img height={height} src={link}>
+	<p> {caption}</p>
+</div>
+
     <style> 
 
-        img{
-
+    .container{
         border: blueviolet;
-        border: 20px;
+        border: 50px;
         margin: 40px;
         rotate: 20%;
         padding: 30px;
+    }
+    caption{
+        font-size: medium;
+            font-style: italic;}
 
-        }
-
-        caption{
-            font-size: medium;
-            font-style: italic;
-        }
 
 
     </style>
 
-    </div>
     
    
 
