@@ -1,6 +1,7 @@
 /* Minimal starter CSS with good defaults */
 /* Add your own styles below these basics */
 body {
+
   margin: 40px auto;
   max-width: 1050px;
   line-height: 1.6;
@@ -9,6 +10,7 @@ body {
   padding: 0 10px;
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(255, 255, 255);
+
 	
 --color-primary-Pink: #ffbdbd;
 --color-primary-Yellow: #FFF98A;
@@ -33,17 +35,15 @@ font-family: var(--font-main);
 font-size: var(--text-normal);
 color: var(--text-color);
 background: var(--background);
-}
 
-h1 { font-size: var(--text-huge);
-font-style: italic; 
-line-height: 100px;
-font-weight: 400 ;}
-
-h2 { font-size: var(--text-large);
-margin: 0px 0px;}
 
 p { font-size: var(--text-normal); }
 
 @import url("https://use.typekit.net/vcf3srs.css");
+
+}
+
+
+
+
   
