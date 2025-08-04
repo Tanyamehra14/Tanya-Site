@@ -1,6 +1,5 @@
 ---
-// Blog layout - different from the main layout
-// This shows how you can have multiple layouts for different types of pages
+// page 2 layout
 const { title, date } = Astro.props;
 ---
 
@@ -11,13 +10,14 @@ const { title, date } = Astro.props;
 		<meta name="description" content="Blog post" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
+		<title>About Me</title>
 		<link rel="stylesheet" href="/src/styles/global.css" />
 	</head>
+
 	<body>
 		<!-- Simple back link instead of full navigation -->
 		<nav>
-			<a href="/">← Back to home</a>
+
 			<a href="/blog">All posts</a>
 		</nav>
 

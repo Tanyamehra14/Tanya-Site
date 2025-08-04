@@ -1,11 +1,10 @@
 ---
 // MainLayout and component
-import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
+import Layout1 from "../layouts/Layout1.astro";
 import Image from "astro/components/Image.astro";
 ---
 
-<MainLayout title="About">
+<Layout1 title="TanyaMehraWebsite">
 	<h1>About This Project</h1>
 
 	<p>This is a beginner-friendly website starter. It's built with Astro and designed to help you learn HTML, CSS, and basic components.</p>
@@ -21,7 +20,6 @@ import Image from "astro/components/Image.astro";
 	<p>This button uses the Button component with a custom text prop:</p>
 
 	<!-- Example of using a component -->
-	<Button text="I'm a Component!" />
 
 	<p><small>Check out <code>src/components/Button.astro</code> to see how it works!</small></p>
 </Layout>

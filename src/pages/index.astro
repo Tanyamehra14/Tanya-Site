@@ -1,50 +1,29 @@
 ---
 // Import the layout and components
-import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
+import Layout1 from "../layouts/Layout1.astro";
 import Card from "../components/Card.astro";
-
-import ImageCard from "../components/ImageCard.astro";
+import ImageCard from "../components/Card.astro";
 const name = "Tanya";
 import root from "../components/global.css";
 ---
 
-<MainLayout title="TanyaMehraWebsite">
+<Layout1 title="TanyaMehraWebsite">
 
 	<div slot="before-menu">
-		<p> Lets create better world for ourself</p>
-		<p class="MainText"> Design, Write and Research and constantly evolving with time.</p>
-		<p> My expressions tell the story long before my words catch up.</p>
-	</div>
-		
 
 	<h1>Tanya Mehra the great</h1>
 	<p>A simple website built with Astro nhi hainnn</p>
 
 	<!-- Example of using a component with props -->
-	<Button text="Read All" />
 
 	<h2>Features</h2>
 
-	<ImageCard link="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg"
-	caption="I am the best yuhuhuhu you all sucks" height="200"/>
-
-	<ImageCard link="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUGGtI9mx80Chu4qiI1zIvaYpAWBSV4PWwDA&s"
-	caption="I am the best yuhuhuhu you all sucks" height="300"/>
-
-	<ImageCard link="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg"
-	caption="I am the best yuhuhuhu you all sucks" height="300"/>
-
-	<ImageCard link="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg"
-	caption="I am the best yuhuhuhu you all sucks" height="300"/>
-	
 
 	<!-- Example of using another component with props -->
 	<Card title="Simple Design" content="Clean and minimal design that's easy to understand." />
 	<Card title="Easy to Edit" content="Change text, colors, and layout with simple code." />
 	<Card title="Learn by Doing" content="Every file has helpful comments to guide you." />
 
-	<Button text="Read All" />
 
 	<div>
 		hi
