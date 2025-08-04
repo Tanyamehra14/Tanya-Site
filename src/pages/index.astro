@@ -1,32 +1,100 @@
 ---
-// Import the layout and components
-import Layout1 from "../layouts/Layout1.astro";
-import Card from "../components/Card.astro";
-import ImageCard from "../components/Card.astro";
-const name = "Tanya";
-import root from "../components/global.css";
+// This component creates the basic structure for every page
+// It takes a "title" prop to set the page title
+import '../styles/global.css';
+import Menu from '../components/menu.astro';
+const { title } = Astro.props;
 ---
 
-<Layout1 title="TanyaMehraWebsite">
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="My website description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		
+	</head>
+	<body>
+		<!-- Navigation appears on every page -->
+		 <div class="Headingone" >
+    <h2>Create better world for ourself</h2>
+	<h1> I <span class="underline">Design</span>
+		 <span class="underline"> ,Write </span> and <span class="underline">  Research </span> and constantly evolving with time</h1>
+	<h4>My expressions tell the story long before my words catch up.</h4>
+  
+</div>
+  <div class="border">
+ <Menu/>
 
-	<div slot="before-menu">
+<h3> Why you should know about me</h3>
 
-	<h1>Tanya Mehra the great</h1>
-	<p>A simple website built with Astro nhi hainnn</p>
-
-	<!-- Example of using a component with props -->
-
-	<h2>Features</h2>
+ </div>
+	</body>
+</html>
 
 
-	<!-- Example of using another component with props -->
-	<Card title="Simple Design" content="Clean and minimal design that's easy to understand." />
-	<Card title="Easy to Edit" content="Change text, colors, and layout with simple code." />
-	<Card title="Learn by Doing" content="Every file has helpful comments to guide you." />
+<style> 
 
+:root {
+	
+--color-primary-Pink: #ffbdbd;
+--color-primary-Yellow: #FFF98A;
+--color-secondary-green: #b8ff97;
+--color-secondary-purple: #b697ff;
+--color-secondary-white: #ffff;
+--text-color: #000; 
+--background: #ffffff; 
 
-	<div>
-		hi
-	</div>
-</Layout>
+/* Adding typography too */
+--text-small: 20px;
+--text-normal: 24px;
+--text-large: 35px;
+--text-huge: 100px;
+
+/* Fonts */
+--font-main: 'New Times Roman', serif;
+--font-heading: 'New Times Roman', serif;
+
+}
+
+body {
+font-family: var(--font-main);
+font-size: var(--text-normal);
+color: var(--text-color);
+background: var(--background);
+}
+
+h1 { font-size: var(--text-huge);
+font-style: italic; 
+line-height: 100px;
+font-weight: 400 ;}
+
+h2 { font-size: var(--text-large);
+margin: 0px 0px;}
+
+p { font-size: var(--text-normal); }
+
+  @import url("https://use.typekit.net/vcf3srs.css");
+
+  .Headingone{
+	text-align: center;
+  }
+
+  .underline {
+  text-decoration: underline;
+  
+}
+
+.underline:hover {
+  background-color: #FFF98A;
+  
+}
+.border{
+	border: #000;
+	border: solid;
+	border-radius: 20px;
+}
+</style>
 
