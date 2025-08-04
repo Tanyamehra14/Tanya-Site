@@ -19,16 +19,23 @@ const { title } = Astro.props;
 	<body>
 		<!-- Navigation appears on every page -->
 		 <div class="Headingone" >
+
     <h2>Create better world for ourself</h2>
-	<h1> I <span class="underline">Design</span>
-		 <span class="underline"> ,Write </span> and <span class="underline">  Research </span> and constantly evolving with time</h1>
-	<h4>My expressions tell the story long before my words catch up.</h4>
+
+	<div class="continer1">
+		<img class="img1", src="1.png"> 
+		<h1> I <span class="underline">Design </span>
+		 <span class="underline"> ,Write </span> and <span class="underline">  Research </span> and constantly evolving with time </h1>
+	
+		 <h4>My expressions tell the story long before my words catch up.</h4> 
+	</div>
   
 </div>
   <div class="border">
  <Menu/>
 
-<h3> Why you should know about me</h3>
+<h3 class="subheading1"> Why you should know about me</h3>
+<p class="subtext"> Hey! I am Tanya Mehra, a Communication Designer and Sociologist passionate about capturing and creating new worlds through the best-suited medium for every story. With a love for painting, sketching, reading, music, writing, photography, and videography, I thrive on blending creativity and सtorytelling in everything I do.</p>
 
  </div>
 	</body>
@@ -69,16 +76,19 @@ background: var(--background);
 h1 { font-size: var(--text-huge);
 font-style: italic; 
 line-height: 100px;
-font-weight: 400 ;}
+font-weight: 400 ;
+margin: 0;
+ margin-top: -70px;
+}
 
 h2 { font-size: var(--text-large);
-margin: 0px 0px;}
+margin: 0px 0px;
+margin-top: -30px;}
 
 p { font-size: var(--text-normal); }
 
   @import url("https://use.typekit.net/vcf3srs.css");
-
-  .Headingone{
+.Headingone{
 	text-align: center;
   }
 
@@ -91,10 +101,48 @@ p { font-size: var(--text-normal); }
   background-color: #FFF98A;
   
 }
+
 .border{
 	border: #000;
 	border: solid;
 	border-radius: 20px;
+	padding: 20px;
 }
+
+.subheading1{
+	text-align: right;
+	text-decoration: underline;
+}
+
+.h4{
+	text-align: left;
+}
+
+.subtext{
+	font-size: smaller;
+	text-align: right;
+	padding-left: 50px;
+	display: flex;
+}
+
+.img1{
+width: 5cm;
+height: 7cm;
+rotate: 90deg;
+margin: 0px;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.container1{
+margin-bottom: 0px;
+margin: 0 auto;
+
+}
+
+
 </style>
 
