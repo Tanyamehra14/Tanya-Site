@@ -14,9 +14,19 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{title}</title>
+		
 	</head>
 	<body>
 		<!-- Navigation appears on every page -->
+		 <div slot="before-menu",>
+	<div class="Headingone" >
+    <h2>Create better world for ourself</h2>
+	<h1> I <span class="underline"> Design,</span> 
+		<span class="underline"> Write </span> and <span class="underline">  Research </span> and constantly evolving with time</h1>
+	<h4>My expressions tell the story long before my words catch up.</h4>
+
+  </div>
+
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
@@ -36,3 +46,57 @@ const { title } = Astro.props;
 		</footer>
 	</body>
 </html>
+
+
+<style> 
+:root {
+	
+--color-primary-Pink: #ffbdbd;
+--color-primary-Yellow: #FFF98A;
+--color-secondary-green: #b8ff97;
+--color-secondary-purple: #b697ff;
+--color-secondary-white: #ffff;
+--text-color: #000; 
+--background: #ffffff; 
+
+/* Adding typography too */
+--text-small: 20px;
+--text-normal: 24px;
+--text-large: 35px;
+--text-huge: 100px;
+
+/* Fonts */
+--font-main: 'New Times Roman', serif;
+--font-heading: 'New Times Roman', serif;
+
+}
+
+body {
+font-family: var(--font-main);
+font-size: var(--text-normal);
+color: var(--text-color);
+background: var(--background);
+}
+
+h1 { font-size: var(--text-huge);
+font-style: italic; 
+line-height: 90px;
+font-weight: 400 ;}
+
+h2 { font-size: var(--text-large);
+margin: 0px 0px;}
+
+p { font-size: var(--text-normal); }
+
+  @import url("https://use.typekit.net/vcf3srs.css");
+
+  .Headingone{
+	text-align: center;
+  }
+
+  .underline {
+  text-decoration: underline;
+}
+
+</style>
+
