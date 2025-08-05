@@ -28,6 +28,7 @@ const { title } = Astro.props;
 		     <h4> My expressions tell the story long before my words catch up. </h4>
              </div>
 			<video class="video1" src="videos/video1.mp4" autoplay loop muted playsinline> </video>
+
 	    </div>
 
    
@@ -59,9 +60,11 @@ const { title } = Astro.props;
                                     <h4 class="subtext2"> ...know more about me </h4>
 		        
                          </div>
+
+					
                  </div>
 
-
+<video class="video2" src="videos/video2.mp4" autoplay loop muted playsinline> </video>
 
 
 
@@ -85,16 +88,20 @@ margin: 0;
 
 h2 { font-size: var(--text-large);
 margin: 0px 0px;
-margin-top: -30px;}
+margin-top: -30px;
+padding-top:24px;}
 
 p { font-size: var(--text-normal); }
 
   @import url("https://use.typekit.net/vcf3srs.css");
 
 .Headingone{
-	justify-content: center;      /* Center vertically */
-  align-items: center;          /* Center horizontally */
+display: flex;
+  flex-direction: column;
+  justify-content: center;     
+  align-items: center;     
   text-align: center;
+  
   }
 
   .underline {
@@ -159,6 +166,9 @@ grid-row: 4;
 	width: 4cm;
 	padding-top: 0;
 	margin: 0cm 0cm;
+}
+.video2{
+	width:50%;
 }
 
 .box1{
@@ -228,5 +238,6 @@ color: #b697ff;
   width: fit-content;
   margin: auto;
 }
+
 </style>
 
