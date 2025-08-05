@@ -3,7 +3,8 @@
 body {
 
   margin: 40px auto;
-  max-width: 1050px;
+  max-width: 1000px; 
+  /* justify-content: center; */
   line-height: 1.6;
   font-size: 18px;
   color: #444;
