@@ -1,7 +1,10 @@
 /* Minimal starter CSS with good defaults */
 /* Add your own styles below these basics */
-body {
+:root  {
 
+  /* background-image: url('/images/bgimage1.png');
+  background-repeat: repeat;
+  background-size:100% ; */
   margin: 40px 20px;
   max-width: 1000px; 
   line-height: 1.6;

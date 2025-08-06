@@ -2,18 +2,47 @@
 // menu.astro
 ---
 
- <div>
+ <div class="Menubar2">
     <nav>
-			<ul class="menu2">
-				<li><a href="/" class="hobbies">Hobbies</a></li>
-                <li><a href="/" class="Cafes">Cafes</a></li>
-                <li><a href="/" class="yearlyupdate">Yearly Update</a></li>
-			</ul>
+    
+      <div class="Menuimages">
+
+        <img class="hobbiesbutton" src="images/7.png">
+         <img class="Cafesbutton" src="images/5.png">
+         <img class="Yearlyupdatebutton" src="images/6.png">
+
+     </div>
+
+			    <ul class="menu2">
+
+                    <li><a href="/" class="hobbies">Hobbies</a></li>
+                    <li><a href="/" class="Cafes">Cafes</a></li>
+                    <li><a href="/" class="yearlyupdate">Yearly Update</a></li>
+		    	</ul>
 	</nav>
 
  </div>
 
 <style>
+
+.hobbiesbutton{
+    width: 250px;
+     margin-top: -54px;
+     rotate: -27deg;
+}
+
+.Cafesbutton{
+    width: 250px;
+    margin-bottom: -20px;
+    rotate: -1.5deg;
+    
+}
+
+.Yearlyupdatebutton{
+    width: 250px;
+    margin-top: -49px;
+   
+}
     .menu2 {
   display: flex;
   text-align: center;
@@ -34,8 +63,9 @@
     text-decoration: none;
     font-style: italic;
     color: black;
+    width: 100px;
 }
-.home:hover{
+.hobbies:hover{
     transform: scale(1.03);
 box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 }
@@ -50,8 +80,9 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
     font-style: italic;
     color: black;
     transition: transform 0.3s ease;
+    width: 100px;
 }
-.design:hover{
+.Cafes:hover{
     transform: scale(1.03);
 box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 }
@@ -65,11 +96,21 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
     text-decoration: none;
     font-style: italic;
     color: black;
-    transition: transform 0.3s ease;
+    
 }
-.research:hover{
+.yearlyupdate:hover{
     transform: scale(1.03);
 box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 }
 
+.Menuimages{
+display: flex;
+  text-align: center;
+  padding-bottom:0px ;
+  position: relative;
+  margin-bottom: -150px;
+  margin-left: 150px;
+  gap:30px;
+  
+}
 </style>
