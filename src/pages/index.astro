@@ -5,6 +5,7 @@ import '../styles/global.css';
 import Menu2 from '../components/Menu/menu2.astro';
 import Menu from '../components/Menu/menu.astro';
 import Readallbutton from '../components/readallbutton.astro';
+import Footer from '../components/footer.astro';
 const { title } = Astro.props;
 ---
 
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 	
+    <div class="mainpage">
 		<div class="Headingone" > <h2>Create better world for ourself</h2>
 
 	        <div class="continer1">
@@ -105,19 +107,24 @@ const { title } = Astro.props;
 </div> 	
 
 <Menu2/>
-
-
-
-
+<!-- <Lifespan/> -->
             </div>
 
+            <Footer/>
+
+            
 	</body>
 </html>
 
 
 <style> 
 
+body{
 
+margin: 20px;
+  /* background-image: url('/images/bgimage1.png');
+  background-repeat: repeat; */
+}
 
 
 .link-icon:hover{
@@ -233,6 +240,7 @@ font-size: 18px;
   gap: 20px;
   text-align: justify;
   line-height: 22px;
+  margin-right:-10px;
 
 }
 
@@ -259,6 +267,7 @@ display: flex;
   justify-content: center;     
   align-items: center;     
   text-align: center;
+  margin: 20px 150px;
   
   }
 
@@ -272,12 +281,14 @@ display: flex;
   
 }
 
-/* .border{
-	border: #0000;
+.border{
+	border: #000;
 	border: solid;
 	border-radius: 20px;
 	padding: 20px;
-} */
+  margin: 20px 60px;
+  padding: 60px;
+} 
 
 
 .subheading1{
@@ -312,10 +323,9 @@ margin-left:20px;
 width: 5cm;
 height: 7cm;
 rotate: 90deg;
-margin: 0px;
+margin-left: 100px;
 display: flex;
 	align-items: flex-start
-
 }
 .container1{
 margin-bottom: 0px;
@@ -378,7 +388,7 @@ margin-right:0px
   align-items: center;
   gap: 20px; 
   height: 50px;
-  padding-right: 20px;
+  padding-left: 200px;
 }
 
 .subtext2{
