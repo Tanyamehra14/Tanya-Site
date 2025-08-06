@@ -1,0 +1,75 @@
+---
+// menu.astro
+---
+
+ <div>
+    <nav>
+			<ul class="menu2">
+				<li><a href="/" class="hobbies">Hobbies</a></li>
+                <li><a href="/" class="Cafes">Cafes</a></li>
+                <li><a href="/" class="yearlyupdate">Yearly Update</a></li>
+			</ul>
+	</nav>
+
+ </div>
+
+<style>
+    .menu2 {
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+    gap: 40px;
+     margin: 50px 90px;
+     padding-right:40px; 
+     padding-bottom:30px;
+     
+}
+
+.hobbies{
+    background-color:#ffffff;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+.home:hover{
+    transform: scale(1.03);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+
+.Cafes{
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    transition: transform 0.3s ease;
+}
+.design:hover{
+    transform: scale(1.03);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+
+.yearlyupdate {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    transition: transform 0.3s ease;
+}
+.research:hover{
+    transform: scale(1.03);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+
+</style>
