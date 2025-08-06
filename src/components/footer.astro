@@ -3,30 +3,41 @@
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-image">
-      <img src="your-image.png" alt="Footer Image">
+      <img src="images/footer.png">
     </div>
     <div class="footer-links">
-      <div>instagram</div>
-      <div>youtube</div>
-      <div>Resume</div>
-      <div>linkedin</div>
-      <div>blog</div>
-      <div>hobbies</div>
-      <div>medium</div>
-      <div>portfolio</div>
-      <div>cafes</div>
+      <div class="Instagram"><a href="#">Instagram</a></div>  
+      <div class="Youtube"><a href="#">Youtube</a></div>
+      <div class="Resume"><a href="#">Resume</a></div>
+      <div class="linkedin"><a href="#">linkedin</a></div>
+      <div class="Blog"><a href="#">Blog</a></div>
+      <div class="Hobbies"><a href="#">Hobbies</a></div>
+      <div class="Medium"><a href="#">Medium</a></div>
+      <div class="Portfolio"><a href="#">Portfolio</a></div>
+      <div class="Cafes"><a href="#">Cafes</a></div>
     </div>
   </div>
 </footer>
 
 <style>
+
+   .Cafes{
+    text-decoration: none;
+    font-style: italic;
+    color:#0000 ;
+    }
+
+
     .footer {
-  border-top: 4px solid #ddd;
+  border-top: 4px solid #000;
+  border-width: 3px;
   padding: 40px;
-  background-color: white; /* or any color */
+  background-color: rgba(255, 222, 226, 0.2);
+  border-radius: 30px;
 }
 
 .footer-content {
+    padding-top: 50px;
   display: flex;
   gap: 60px;
   align-items: flex-start;
@@ -35,17 +46,21 @@
 }
 
 .footer-image img {
-  width: 120px;
+  width: 250px;
   height: 160px;
   object-fit: cover;
-  background-color: #ddd;
 }
 
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  gap: 20px 50px;
-  font-size: 14px;
+  gap: 20px 90px;
+  font-size: 24px;
+  color: #000000ff ;
+
 }
+  body{  background-image: url('/images/bgimage1.png');
+  background-repeat: repeat;
+  background-size:100%;}
 
 </style>

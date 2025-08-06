@@ -3,9 +3,10 @@
 :root  {
 
   background-image: url('/images/bgimage1.png');
+  
   background-repeat: repeat;
   background-size:100%;
-
+  
    margin: 40px 20px; 
   line-height: 1.6;
   font-size: 18px;

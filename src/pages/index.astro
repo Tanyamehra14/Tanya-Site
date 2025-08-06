@@ -73,6 +73,7 @@ const { title } = Astro.props;
 <div class="containerC">
 
   <div class= container3> 
+
 				    <div class="fancy-card">
            <div class="side-tab-pink"></div>
            <p class="card-text">
@@ -108,9 +109,10 @@ const { title } = Astro.props;
 
 <Menu2/>
 <!-- <Lifespan/> -->
+ <Footer/>
             </div>
 
-            <Footer/>
+      
 
             
 	</body>
@@ -120,8 +122,7 @@ const { title } = Astro.props;
 <style> 
 
 body{
-
-margin: 20px;
+     margin: 20px;
   /* background-image: url('/images/bgimage1.png');
   background-repeat: repeat; */
 }
@@ -144,8 +145,9 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
   transform: rotate(180deg);
   font-style: italic;
   color: black;
-  padding-top: 550px;
-  font-size: 26px;}
+  padding-top: 460px;
+  font-size: 26px;
+margin-left:-170px ;}
 
 .redbutton{
 	align-items:left;
@@ -155,6 +157,7 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 	margin-top:60px;
 	border-right: 10px solid #bababaff;
 height: 500px;
+max-width: 390px;
 	
 }
 
@@ -240,8 +243,6 @@ font-size: 18px;
   gap: 20px;
   text-align: justify;
   line-height: 22px;
-
-
 }
 
 h1 { font-size: var(--text-huge);
@@ -314,9 +315,9 @@ h4 {
   line-height: 1.8;
   font-weight: lighter;
 padding-left:30px;
-margin-right: 0px;
+margin-right: -60px;
 margin-bottom:0px;
-margin-left:20px;
+margin-left:100px;
 }
 
 .img1{
@@ -342,7 +343,6 @@ grid-row: 4;
 }
 .video2{
   max-width: 100%;
-  padding-top: 250px;
 }
 
 .box1{
@@ -397,6 +397,7 @@ margin-right:0px
 	font-size: 26px;
   font-weight: bold;
   padding: 0%;
+  margin-right:-42px;
 }
 .subtext2:hover{
 color: #b697ff;
@@ -414,6 +415,10 @@ color: #b697ff;
   width: fit-content;
   margin: auto;
 }
+
+body{  background-image: url('/images/bgimage1.png');
+  background-repeat: repeat;
+  background-size:100%;}
 
 </style>
 
