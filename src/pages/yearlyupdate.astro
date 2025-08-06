@@ -1,0 +1,40 @@
+---
+// This component creates the basic structure for every page
+// It takes a "title" prop to set the page title
+import '../styles/global.css';
+import Menu from '../components/Menu/menu.astro';
+import Footer from '../components/footer.astro';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="My website description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		
+	</head>
+	<body>
+     <div class="border">
+<Menu/>
+<Footer/>
+
+     </div>
+
+    </body>
+</html>
+
+<style>
+
+.border{
+	border: #000;
+	border: solid;
+	border-radius: 20px;
+	padding: 20px;
+  margin: 20px 60px;
+  padding: 60px;
+} 
+</style>
