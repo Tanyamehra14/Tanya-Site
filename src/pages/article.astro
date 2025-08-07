@@ -65,7 +65,9 @@ const { title } = Astro.props;
 
 <div/>
 
-              	<div class="containerE">    <div class= "imagebox1"> 
+              	
+         </div>
+         <div class="containerE">    <div class= "imagebox1"> 
 						<img class="boximage" src="images/3.png">
                         <img class="box1" src="images/box1.png"></div> 
                         
@@ -82,7 +84,6 @@ You have wings.
 Learn to use them, and fly."</p></div>
  </div>   
          </div>	 
-         </div>
 
 <br/>
 <Footer/>
@@ -97,6 +98,16 @@ Learn to use them, and fly."</p></div>
   .containerE{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+
+    margin-left: 150px;
+
+    
+  }
+  .text2{
+    padding-top: 150px;
+    min-width: 400px;
+
   }
 
   .quote{
@@ -146,7 +157,7 @@ transform: scale(1.03);
 box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 } */
 .imagebox1{
-  margin-left: 140px;
+ 
   margin-top: -80px;
   padding-bottom: 30px;
 }
