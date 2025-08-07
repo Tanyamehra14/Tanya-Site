@@ -28,8 +28,8 @@ const { title } = Astro.props;
 	        <div class="continer1">
 
 		     <img class="img1", src="images/1.png"> 
-		     <h1> I <span class="underline">Design </span>
-		     <span class="underline"> ,Write </span> and <span class="underline">  Research </span> and constantly evolving with time </h1>
+		     <h1> I <span><a href="/Design" class="underline">Design </a></span>
+		     <span><a href="/article" class="underline"> ,Write </a></span> and <span><a href="/Research" class="underline">  Research </a></span> and constantly evolving with time </h1>
 		     <h4> My expressions tell the story long before my words catch up. </h4>
              </div>
 			<video class="video1" src="videos/video1.mp4" autoplay loop muted playsinline> </video>
@@ -61,8 +61,9 @@ const { title } = Astro.props;
                             </div>
 
                                     <h4 class="subtext"> Hey! I am Tanya Mehra, a Communication Designer and Sociologist passionate about capturing and creating new worlds through the best-suited medium for every story. With a love for painting, sketching, reading, music, writing, photography, and videography, I thrive on blending creativity and <span style="background-color: #FFF98A;"> सtorytelling </span> in everything I do. </h4>
-                                    <h4 class="subtext">I approach design with <span style="background-color: #FFF98A;"> एmpathy</span> and <span style="background-color: #FFF98A;"> रिesearch, </span> always considering the social context and the bigger picture. I seek to understand the real-time challenges people face and build projects that bring them closer whether through visual narratives, interactive experiences, or cultural journeys. </h4>
-                                    <h4 class="subtext2"> ...know more about me </h4>
+                                    <h4 class="subtext">I approach design with <span style="background-color: #FFF98A;"> एmpathy</span> and <span style="background-color: #FFF98A;"> रिesearch, </span> always considering the social context and the bigger picture. I seek to understand the real-time challenges people face and build projects that bring them closer whether through visual narratives, interactive experiences, or cultural journeys.
+                                    <a href="/article" class="subtext2">...know more about me</a> </h4>
+                                  <!-- <a href="/article" class="subtext2">...know more about me</a> -->
 		        
                          </div>
 
@@ -79,7 +80,7 @@ const { title } = Astro.props;
            <div class="side-tab-pink"></div>
            <p class="card-text">
              Rethinking the Bottle: Where Design Meets Function and Value.
-             <a href="#"><span class="link-icon">🔗</span></a>
+             <a href=""><span class="link-icon">🔗</span></a>
               </p> </div>
 
 
@@ -88,7 +89,7 @@ const { title } = Astro.props;
            <div class="side-tab-green"></div>
            <p class="card-text">
              Creative problem-solving isn’t just about finding answers.
-             <a href="#"><span class="link-icon">🔗</span></a>
+             <a href=""><span class="link-icon">🔗</span></a>
               </p> </div>
 </br>
  <div class="fancy-card">
@@ -121,6 +122,8 @@ const { title } = Astro.props;
 
 
 <style> 
+.subtext2{
+  align-items:right;}
 
 body{
      margin: 20px;
@@ -275,6 +278,7 @@ display: flex;
 
   .underline {
   text-decoration: underline;
+  color:black;
   
 }
 
@@ -393,15 +397,17 @@ margin-right:0px
 }
 
 .subtext2{
-	text-align:right;
-	margin:0px 0px;
+	
 	font-size: 26px;
   font-weight: bold;
-  padding: 0%;
-  margin-right:-42px;
+color:black; 
+text-decoration:none;
+padding:0%;
 }
+
 .subtext2:hover{
 color: #b697ff;
+text-decoration: none;
 }
 
 .boximage{
