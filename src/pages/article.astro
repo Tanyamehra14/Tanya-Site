@@ -25,20 +25,85 @@ const { title } = Astro.props;
     <h1># My own writings</h1>
 </div>
 
-  <div class="fancy-card">
+<div class=" containerD">
+
+          <div class="fancy-card">
            <div class="side-tab-green"></div>
              <p class="card-text"><b> Rethinking the Bottle: </b> <br/> Where Design Meets Function and Value.
              <a href=""><span class="link-icon">🔗</span></a>
               </p> </div>
+
+              <div class="fancy-card">
+           <div class="side-tab-green"></div>
+             <p class="card-text"><b> Creative problem-solving isn’t just about finding answers: </b> <br/> it’s about questioning the question.
+             <a href=""><span class="link-icon">🔗</span></a>
+              </p> </div>
+
+              <div class="fancy-card">
+           <div class="side-tab-green"></div>
+             <p class="card-text"><b> Finally calling myself a design student: </b> <br/> Journey a long way!
+             <a href=""><span class="link-icon">🔗</span></a>
+              </p> </div>
+
+              <div class="fancy-card">
+           <div class="side-tab-green"></div>
+             <p class="card-text"><b> How Sociology as a Subject Helps Me Become a Better Designer: </b> <br/> Resaerch and Design the unstopable link.
+             <a href=""><span class="link-icon">🔗</span></a>
+              </p> </div>
+
+              <div class="fancy-card">
+           <div class="side-tab-green"></div>
+             <p class="card-text"><b> From Reading Ethnography to Doing Ethnography: </b> Came a long way!
+             <a href=""><span class="link-icon">🔗</span></a>
+              </p> </div>
+
+  <div/>
+
+              			    <div class= "imagebox1"> 
+						<img class="boximage" src="images/3.png">
+                        <img class="box1" src="images/box1.png">
+				
+</div> 
+ </div>   
+          
+
+
 <br/>
 <Footer/>
 </div>
-
     </body>
 </html>
 
-<style>
+<!-- ___________________________________________________ -->
 
+<style>
+p{
+  text-align: left;
+}
+  .containerD{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+.box1{
+	height:300pt;
+	width: 250pt;
+	display: flex;
+	max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  padding-top:0px;
+  z-index: 1;
+}
+.boximage{
+	height: 500px;
+	width:300px;
+	margin-bottom:-255px;
+}
+ 
+
+  
 /* .fancy-card::before{
   content: '';
   position: absolute;
@@ -54,7 +119,10 @@ const { title } = Astro.props;
 transform: scale(1.03);
 box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 } */
-
+.imagebox1{
+  margin-left: 90px;
+  margin-bottom: 90px;
+}
 .card-text {
   margin: 0;
   padding-left: 20px;
@@ -72,11 +140,21 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
   width: 45px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color: #b8ff97;
-  border-right:4px solid rgb(190, 214, 168) ;
+  background-color: #b697ff;
+  border-right:4px solid #baaed5 ;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   margin-left: -27px;
+}
+
+.side-tab-green:hover {
+  transform: scale(1.07);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+  
+.fancy-card:Hover {
+  transform: scale(1.04);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
 }
 
 .fancy-card {
@@ -93,6 +171,7 @@ font-size: 18px;
   background-color: white;
   gap: 20px;
   text-align: justify;
+  margin-bottom: 30px;
 
 
 }
