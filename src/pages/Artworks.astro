@@ -1,0 +1,103 @@
+---
+// This component creates the basic structure for every page
+// It takes a "title" prop to set the page title
+import '../styles/global.css';
+import Menu from '../components/Menu/menu.astro';
+import Footer from '../components/footer.astro';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="My website description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		
+	</head>
+	<body>
+     <div class="border">
+<Menu/>
+
+<div class="Hobbies">
+    <h1># My Artworks</h1>
+</div> 
+
+<p class="hobbytext"> I love painting and illustrating. It keeps me inspired and fuels my creativity. I love painting and illustrating. It keeps me inspired and fuels my creativity.
+	
+</p>
+
+
+<div class="hobbieswrap">
+
+
+<img src="Artwork/i3.png" class="artwork";>
+<img src="Artwork/i2.png" class="artwork";>
+<img src="Artwork/i8.png" class="artwork";>
+<img src="Artwork/A7.png" class="artwork";>
+<img src="Artwork/i4.png" class="artwork";>
+<img src="Artwork/A9.png" class="artwork";>
+<img src="Artwork/i1.png" class="artwork";>
+<img src="Artwork/A1.png" class="artwork";>
+<img src="Artwork/A10.png" class="artwork";>
+<img src="Artwork/A2.png" class="artwork";>
+<img src="Artwork/A6.png" class="artwork";>
+<img src="Artwork/i7.png" class="artwork";>
+<img src="Artwork/i9.jpg" class="artwork";>
+<img src="Artwork/i5.png" class="artwork";>
+<img src="Artwork/A5.png" class="artwork";>
+<img src="Artwork/A11.png" class="artwork";>
+<img src="Artwork/A12.png" class="artwork";>
+
+     </div>
+
+	 <Footer/>
+
+    </body>
+</html>
+
+<style>
+
+	.artwork{
+		 width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+
+	.artwork:hover
+	{
+  transform: scale(1.02);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+	}
+	
+.hobbieswrap{
+column-count: 3;
+       column-gap: 15px;
+       padding:28px;
+	
+		
+}
+
+	.hobbytext{
+		max-width: 800px;
+		font-style: italic;
+	}
+.Hobbies{
+font-style: italic;
+text-decoration: underline;
+border-top: #000 solid 2px;
+
+}
+.border{
+	border: #000;
+	border: solid;
+	border-radius: 20px;
+	padding: 20px;
+  margin: 20px 60px;
+  padding: 60px;
+} 
+</style>
