@@ -1,0 +1,59 @@
+
+---
+// This component creates the basic structure for every page
+// It takes a "title" prop to set the page title
+import '../styles/global.css';
+import Menu from '../components/Menu/menu.astro';
+import Footer from '../components/footer.astro';
+import Menu2 from '../components/Menu/menu2.astro';
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="My website description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+		
+	</head>
+	<body>
+<div class="border">
+<Menu/>
+
+<div class="Aboutme">
+    <h1>About my self</h1> 
+
+<p class="abouttext">Im Tanya Mehra born in Delhi and raised in Uttar Pradesh. After completing my Bachelor’s in Sociology, I developed a deep interest in understanding people and cultures. Currently, I’m pursuing my Master’s in Communication Design, where I blend research, design, and creativity to craft meaningful experiences
+	
+</p>
+
+<h3> Design Tools I Know</h3>
+ <img class="tools", src="images/tools.png">
+
+
+
+
+
+</div>
+</body>
+
+<style>
+
+    .border{
+        border: #000;
+	border: solid;
+	border-radius: 20px;
+	padding: 20px;
+  margin: 20px 60px;
+  padding: 60px;
+    }
+
+
+    .abouttext{
+        max-width: 800px;
+    }
+</style>
+
