@@ -3,7 +3,7 @@
 // It takes a "title" prop to set the page title
 import '../styles/global.css';
 import Menu from '../components/Menu/menu.astro';
-import Footer from '../components/footer.astro';
+import Footer from '../components/footer.astro';import Backbutton from '../components/Backbutton.astro';
 const { title } = Astro.props;
 ---
 
@@ -19,15 +19,14 @@ const { title } = Astro.props;
 	</head>
 	<body>
      <div class="border">
+		    <Backbutton/>
 <Menu/>
 
-  <div class="maping">
+  <div class="maping"> 
 
-<!-- <a href="https://maps.app.goo.gl/avSaCBfYG73eTRou8" target="_blank">
+<a href="https://maps.app.goo.gl/avSaCBfYG73eTRou8" target="_blank">
   📍 View my café list on Google Maps
-</a -->
-
-
+</a>
 
 
 
@@ -38,9 +37,9 @@ const { title } = Astro.props;
     </body>
 </html>
 
+
+
 <style>
-
-
 
 .border{
 	border: #000;
