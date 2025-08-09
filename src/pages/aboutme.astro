@@ -19,28 +19,188 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		
 	</head>
-	<body>
+<body>
 <div class="border">
-<Menu/>
+  <Menu/>
 
-<div class="Aboutme">
-    <h1>About my self</h1> 
+  <div class="Aboutme">
+    <!-- Left side image -->
+    <img class="Aboutmephoto" src="images/aboutme.png">
 
-<p class="abouttext">Im Tanya Mehra born in Delhi and raised in Uttar Pradesh. After completing my Bachelor’s in Sociology, I developed a deep interest in understanding people and cultures. Currently, I’m pursuing my Master’s in Communication Design, where I blend research, design, and creativity to craft meaningful experiences
-	
-</p>
+    <!-- Right side text -->
+    <div class="about-text">
+      <h3 class="Headingabout">   About Me   </h3>
+      <p>
+        I'm Tanya Mehra born in Delhi and raised in Uttar Pradesh. 
+        After completing my Bachelor’s in Sociology, I developed a deep interest in understanding people and cultures. 
+        Currently, I'm pursuing my Master’s in Communication Design, where I blend research, design, and creativity to craft meaningful experiences.
+      </p>
+      <img src="images/tools.png" alt="Design Tools" class="tools-img">
+    </div>
+  </div>
 
-<h3> Design Tools I Know</h3>
- <img class="tools", src="images/tools.png">
+<div class="education-section">
+  <!-- Left column -->
+  <div class="education-left">
+    <h3 class="Headingeducation">Education</h3>
+    <p><strong>2024-Present</strong> MDes Communication Design<br>Dhirubhai Ambani University</p>
+    <p><strong>2021-24</strong> BA Sociology Honours<br>JDMC, University of Delhi</p>
+    <p><strong>2022-23</strong> UI/UX Design Diploma<br>National Institute of Fashion Technology, Mumbai</p>
+    <p><strong>2021 </strong> 12th Intermediate<br>Ryan International School, Ghaziabad</p>
+  </div>
 
+  <!-- Right column -->
+  <div class="education-right">
+    <div class="contact-info">
+      <h3 class="Headingprofessional">For my professional Work</h3>
+      <p class="Headingprofessional2"> You can contact me !!</p>
 
+      <div class="button-row">
+        <a href="#" class="btn yellow">Portfolio</a>
+        <a href="#" class="btn pink">Resume</a>
+      </div>
+    </div>
+
+    <div class="quote pink-bubble">
+      “ Well I don't just write and talk philosophical I am fun to be around too.”
+    </div>
+
+    <div class="quote pink-bubble small">
+      Scroll Down
+    </div>
+  </div>
+</div>
 
 
 
 </div>
 </body>
 
+
 <style>
+.Headingprofessional{
+	font-size:24px;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-weight:bold;
+}
+
+.Headingprofessional2{
+	font-size:20px;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+.contact-info{
+
+	border-right: 10px solid #f9b0b5;
+	padding:40px;
+	height: 150px;
+	margin-right:60px;
+	margin-top: -120px;
+}
+	.education-left{
+		margin-left: 100px;
+		margin-top: -90px;
+	}
+
+	.education-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Left and right */
+  gap: 30px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.education-left h2 {
+  font-weight: bold;
+}
+
+.education-left p {
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.contact-info {
+  text-align: right;
+}
+
+.contact-info h3 {
+  font-style: italic;
+  font-weight: light;
+  margin-bottom: -8px;
+}
+
+.contact-info small {
+  display: block;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+   margin-top: 20px;
+   font-weight:light;
+   
+   
+}
+
+.btn {
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.btn.yellow {
+  background-color: #f7e37c;
+  color:black;
+  font-size:24px;
+  font-style:italic;
+
+  width:100px;
+  text-align:center;
+  font-weight:light;
+
+}
+
+.btn.pink {
+  background-color: #f9b0b5;
+  color:black;
+  font-size:24px;
+  font-style:italic;
+  width:100px;
+  text-align:center;
+}
+
+.pink-bubble {
+  background-color: #f9b0b5;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  font-style: italic;
+  margin: 10px 0;
+  font-weight:light;
+}
+
+.pink-bubble.small {
+  font-style: normal;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .education-section {
+    grid-template-columns: 1fr; /* Stack for mobile */
+  }
+  .contact-info, .button-row {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
 
     .border{
         border: #000;
@@ -51,9 +211,58 @@ const { title } = Astro.props;
   padding: 60px;
     }
 
+	.Headingabout{
+text-decoration:underline gray 2px;
+margin: 6px 0px;
 
-    .abouttext{
-        max-width: 800px;
-    }
+	}
+
+.Aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 30px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: #000 2px solid;
+
+}
+
+.Aboutmephoto {
+  max-width: 80%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.about-text {
+  text-align: right;
+   margin-bottom: 0px 0px;
+}
+
+.about-text h1 {
+
+  display: inline-block;
+  padding-top: 10px;
+
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.tools-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+p{
+	margin: 10px 0px;
+	font-size: 20px;
+}
+
+
 </style>
 
