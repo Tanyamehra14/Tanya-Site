@@ -5,6 +5,7 @@ import '../styles/global.css';
 import Menu from '../components/Menu/menu.astro';
 import Footer from '../components/footer.astro';
 import Menu2 from '../components/Menu/menu2.astro';
+import Backbutton from '../components/Backbutton.astro';
 const { title } = Astro.props;
 ---
 
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 <div class="border">
+   <Backbutton/>
 <Menu/>
 
 <div class="section-title">
