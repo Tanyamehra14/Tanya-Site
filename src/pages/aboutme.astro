@@ -1,4 +1,3 @@
-
 ---
 // This component creates the basic structure for every page
 // It takes a "title" prop to set the page title
@@ -6,8 +5,10 @@ import '../styles/global.css';
 import Menu from '../components/Menu/menu.astro';
 import Footer from '../components/footer.astro';
 import Menu2 from '../components/Menu/menu2.astro';
+import Lifebox from '../components/Lifebox.astro';
 const { title } = Astro.props;
 ---
+
 
 <!doctype html>
 <html lang="en">
@@ -61,23 +62,28 @@ const { title } = Astro.props;
       </div>
     </div>
 
-    <div class="quote pink-bubble">
+    <div class="quote-pink-bubble">
       “ Well I don't just write and talk philosophical I am fun to be around too.”
     </div>
 
-    <div class="quote pink-bubble small">
+    <div class="quote-pink-bubble">
       Scroll Down
     </div>
   </div>
 </div>
 
 
+<Lifebox/>
+<br><br>
+<Menu2/>
 
 </div>
 </body>
 
 
 <style>
+
+
 .Headingprofessional{
 	font-size:24px;
 	margin: 0px 0px;
@@ -98,6 +104,7 @@ const { title } = Astro.props;
 	height: 150px;
 	margin-right:60px;
 	margin-top: -120px;
+	margin-bottom:70px;
 }
 	.education-left{
 		margin-left: 100px;
@@ -168,6 +175,16 @@ const { title } = Astro.props;
 
 }
 
+.btn.yellow:Hover{
+	   transform: scale(1.03);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+
+.btn.pink:Hover{
+	   transform: scale(1.03);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
+
 .btn.pink {
   background-color: #f9b0b5;
   color:black;
@@ -177,14 +194,19 @@ const { title } = Astro.props;
   text-align:center;
 }
 
-.pink-bubble {
+.quote-pink-bubble {
   background-color: #f9b0b5;
   padding: 15px;
-  border-radius: 10px;
-  max-width: 300px;
+  border-radius: 20px 20px 0px 20px;
+  max-width: 350px;
   font-style: italic;
   margin: 10px 0;
   font-weight:light;
+  font-size:20px;
+  text-align:right;
+  margin-left:90px;
+  line-height:24px;
+  
 }
 
 .pink-bubble.small {
@@ -263,6 +285,9 @@ p{
 	font-size: 20px;
 }
 
+.education-right{
+
+}
 
 </style>
 
