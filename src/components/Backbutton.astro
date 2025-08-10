@@ -2,16 +2,22 @@
 
 
 <div class="backbutton">
-   <a href="#" class="backbutton1">  </a>
-    </div>
-
-
+   <a href="/aboutme" class="backbutton2"> 
+    <img src="/public/images/home.png">
+  </a>
+  <a href="#" class="backbutton2">
+    <img src="/public/images/contact.png">
+  </a>
+</div>
 
 <style>
      
-  .backbutton1{
-  background-color:#b8ff97 ;
+
+
+  /* .backbutton1{
+
   display: inline-block;
+   display: flex;
     padding: 10px 40px;
     border-radius: 28px;
     text-decoration: none;
@@ -21,18 +27,70 @@
     top:650px;
     left:1300px;
     position: fixed;
-}
+   */
 
-.backbutton {
+  /* .backbutton{
       display: flex;
       align-items: flex-start;
       position: relative;
       gap: 100px;
       margin-left:60px;
     background-repeat:no-repeat;
-    background-position: -90px;   text-decoration:none;
+    background-position: -90px; 
+    text-decoration:none;
+     background: linear-gradient(to right, #ffe0e0, white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
 
-    }
+
+  .backbutton {
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    /* background: linear-gradient(to right, #ffe0e0, white); */
+     background: #ffe0e0;
+   
+    border: black solid 2.5px;
+      display: inline-block;
+   display: flex;
+    padding: 10px 40px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    transition: transform 0.3s ease;
+    top:630px;
+    left:1200px;
+    position: fixed;
+    height: 50px;
+    width: 150px;
+     justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(69, 68, 68, 0.25);
+  }
+
+  .backbutton2 {
+   
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    radius: 40px;
+  }
+
+  
+
+  .backbutton2:Hover{
+    transform: scale(1.08);
+box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+  }
+
+ 
 
      .point {
       position: relative;   text-decoration:none;
