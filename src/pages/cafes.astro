@@ -1,56 +1,98 @@
 ---
-// This component creates the basic structure for every page
-// It takes a "title" prop to set the page title
 import '../styles/global.css';
 import Menu from '../components/Menu/menu.astro';
-import Footer from '../components/footer.astro';import Backbutton from '../components/Backbutton.astro';
+import Footer from '../components/footer.astro';
+import Backbutton from '../components/Backbutton.astro';
 const { title } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="My website description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-		
-	</head>
-	<body>
-		
-<div class="border">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Hopping Menu</title>
 
+<style> 
+.Cafe {
+    background-image: url('/images/cafe-images.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    max-width: 900px;
+    height: 700px;
+    
 
-       <video class="cafevideo" src="/videos/cafevideo.mp4"   video.playbackRate = 0.5; autoplay loop muted playsinline></video>
+}
 
+.point {
+    position: relative;
+    margin-bottom: 30px;
+}
 
-    </body>
-</html>
+.c1 {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF98A;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px black;
+    margin-top: 10px;
+}
 
+.c1:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+}
 
+.info-box {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(207, 222, 192, 0.9);
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: none;
+    font-size: 18px;
+    box-shadow: 0 2px 5px grey;
+}
 
-<style>
-
-
-.cafevideo{
-rotate: 90deg;
-align-items: center;
-justify-content: center;
-margin-left: 150px;
-margin-bottom: -70px;
-width: 400px;}
-
-.border{
-	border: #000;
-	border: solid;
-	border-radius: 20px;
-	padding: 20px;
-  margin: 20px 60px;
-  padding: 60px;
-} 
-
-
-
-
+.point:hover .info-box {
+    display: block;
+}
 </style>
+</head>
+
+<body>
+  <div class="Cafe">
+    <div class="point">
+      <div class="c1"></div>
+      <div class="info-box">Hi, I'm Tanya Mehra a Designer!</div>
+    </div>
+
+    <div class="point">
+      <div class="c1"></div>
+      <div class="info-box">*2003* I am Born in Delhi</div>
+    </div>
+
+    <div class="point">
+      <div class="c1"></div>
+      <div class="info-box">*2021-2024* Graduated in Sociology Honours from Delhi University</div>
+    </div>
+
+    <div class="point">
+      <div class="c1"></div>
+      <div class="info-box">*2023* Diploma in UI/UX Design from NIFT Mumbai</div>
+    </div>
+
+    <div class="point">
+      <div class="c1"></div>
+      <div class="info-box">*2024-2026* Pursuing Masters in Communication Design</div>
+    </div>
+  </div>
+</body>
+</html>
