@@ -1,7 +1,14 @@
+
 ---
+// This component creates the basic structure for every page
+// It takes a "title" prop to set the page title
 import '../styles/global.css';
+import Menu2 from '../components/Menu/menu2.astro';
 import Menu from '../components/Menu/menu.astro';
+import Readallbutton from '../components/readallbutton.astro';
 import Footer from '../components/footer.astro';
+import Lifebox from '../components/Lifebox.astro';
+import Bestprojects from '../components/bestprojects.astro';
 import Backbutton from '../components/Backbutton.astro';
 const { title } = Astro.props;
 ---
@@ -11,88 +18,151 @@ const { title } = Astro.props;
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cafe Hopping Menu</title>
-
-<style> 
-.Cafe {
-    background-image: url('/images/cafe-images.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    max-width: 900px;
-    height: 700px;
-    
-
-}
-
-.point {
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.c1 {
-    width: 30px;
-    height: 30px;
-    background-color: #FFF98A;
-    border-radius: 50%;
-    cursor: pointer;
-    border: solid 1px black;
-    margin-top: 10px;
-}
-
-.c1:hover {
-    transform: scale(1.04);
-    box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
-}
-
-.info-box {
-    position: absolute;
-    top: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(207, 222, 192, 0.9);
-    color: #333;
-    padding: 8px 12px;
-    border-radius: 8px;
-    white-space: nowrap;
-    display: none;
-    font-size: 18px;
-    box-shadow: 0 2px 5px grey;
-}
-
-.point:hover .info-box {
-    display: block;
-}
-</style>
 </head>
-
 <body>
-  <div class="Cafe">
-    <div class="point">
-      <div class="c1"></div>
-      <div class="info-box">Hi, I'm Tanya Mehra a Designer!</div>
-    </div>
 
-    <div class="point">
-      <div class="c1"></div>
-      <div class="info-box">*2003* I am Born in Delhi</div>
-    </div>
+  
+           <div class="border">
+    <Backbutton/>
+               <Menu/>
 
-    <div class="point">
-      <div class="c1"></div>
-      <div class="info-box">*2021-2024* Graduated in Sociology Honours from Delhi University</div>
-    </div>
 
-    <div class="point">
-      <div class="c1"></div>
-      <div class="info-box">*2023* Diploma in UI/UX Design from NIFT Mumbai</div>
-    </div>
+<div class="cafecontainer">
+<div class="image-container">
+  <img src="/Cafe/Roof-topUdepur.jpg" alt="Example Image">
+  <div class="overlay-text">Roof Top Cafe - Udepur</div>
+</div>
 
-    <div class="point">
-      <div class="c1"></div>
-      <div class="info-box">*2024-2026* Pursuing Masters in Communication Design</div>
-    </div>
-  </div>
+
+<div class="image-container">
+  <img src="/Cafe/bigchill.jpg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/butterberry.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/donut.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/idr.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/jugmug.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/kalsang.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/momagota.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/nv.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/ricos.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/rooftopmkt.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/rostary.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/rostary2.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/social.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+<div class="image-container">
+  <img src="/Cafe/sok.jpeg" alt="Example Image">
+  <div class="overlay-text">This is the hover text</div>
+</div>
+
+
+
+</div></div>
 </body>
 </html>
+
+
+<style>
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 300px; /* adjust size */
+    gap: 50PX;
+    border-radius: 20px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* The text overlay */
+  .overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background: rgba(0,0,0,0.6); /* dark overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* hide initially */
+    transition: opacity 0.4s ease; /* smooth effect */
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  /* Show text on hover */
+  .image-container:hover .overlay-text {
+    opacity: 1;
+  }
+
+  .cafecontainer{
+column-count: 4;
+       column-gap: 20px;
+       padding:28px;
+	
+}
+
+
+.border{
+	border: #000;
+	border: solid;
+	border-radius: 20px;
+	padding: 20px;
+  margin: 20px 60px;
+  padding: 60px 50px;
+} 
+</style>
