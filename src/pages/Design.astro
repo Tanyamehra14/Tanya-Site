@@ -26,6 +26,7 @@ const { title } = Astro.props;
      <div class="border">
 <Menu/>
 
+<div class="designcontainer">
 <div class="Designtext">
     <h1># My Design Work</h1>
 </div>
@@ -190,16 +191,28 @@ const { title } = Astro.props;
 
 
 </div>
-
+</div>
 <br>
 <Footer/>
 
+
+</div>
      </div>
 
     </body>
 </html>
 
 <style>
+
+.designcontainer{
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.designcontainer{
+  margin-right: 150px;
+  margin-left: 150px;
+}
 
 .Designtext{
 font-style: italic;
@@ -211,7 +224,6 @@ border-top: #000 solid 2px;
  display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 per row */
   gap: 20px;
-  max-width: 900px;
   margin: auto;
 
 }
