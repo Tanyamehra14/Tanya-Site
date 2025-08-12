@@ -13,44 +13,14 @@
 <style>
      
 
-
-  /* .backbutton1{
-
-  display: inline-block;
-   display: flex;
-    padding: 10px 40px;
-    border-radius: 28px;
-    text-decoration: none;
-    font-style: italic;
-    color: black;
-    transition: transform 0.3s ease;
-    top:650px;
-    left:1300px;
-    position: fixed;
-   */
-
-  /* .backbutton{
-      display: flex;
-      align-items: flex-start;
-      position: relative;
-      gap: 100px;
-      margin-left:60px;
-    background-repeat:no-repeat;
-    background-position: -90px; 
-    text-decoration:none;
-     background: linear-gradient(to right, #ffe0e0, white);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
+/* 
 
   .backbutton {
     display: flex;
     gap: 40px;
     padding: 20px 40px;
     border-radius: 50px;
-    /* background: linear-gradient(to right, #ffe0e0, white); */
      background: #ffe0e0;
-   
     border: black solid 2.5px;
       display: inline-block;
    display: flex;
@@ -98,6 +68,47 @@ box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
     }
 .body{
     text-decoration:none;
-}
+} */
+
+.backbutton {
+    display: flex;
+    gap: clamp(15px, 4vw, 40px); /* Auto-adjust gap */
+    padding: 10px clamp(20px, 4vw, 40px);
+    border-radius: 35px;
+    background: #ffe0e0;
+    border: 2.5px solid black;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    box-shadow: 0 8px 20px rgba(69, 68, 68, 0.25);
+    z-index: 200;
+
+    /* Position bottom center */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .backbutton2 {
+    border-radius: 50%;
+    width: clamp(28px, 5vw, 40px); /* Auto size */
+    height: clamp(28px, 5vw, 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .backbutton2 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .backbutton2:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(197, 189, 189, 0.25);
+  }
 
 </style>
